@@ -23,7 +23,7 @@ if quiz_count > @quiz_amount_before
 	doc.css('tr')[quiz_count-1].css('td')[1].css('a').map {|link| @quiz_link = link['href']}
 	@quiz_link = "http://math.sierracollege.edu/Staff/dbalaguy/Math%2029/Summer,%202014/#{@quiz_link}"
 
-	bitly = Bitly.new('starboysa', 'R_a3ed6d26f75541eead1b40e9863dbd37')
+	bitly = Bitly.new('starboysa', 'R_a3eDhdkdshsdd6d26f75541eead1b40e9863dbd3Hdhhdeb7')
 	text_link = bitly.shorten(@quiz_link, :history => 1)
 
 	new_quiz = doc.css('tr')[quiz_count-1].css('td')[1].text.strip.tr("\r\n", "")
